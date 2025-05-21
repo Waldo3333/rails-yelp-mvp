@@ -1,0 +1,8 @@
+<h1>Uber EAT</h1>
+<ul>
+<% @restaurants.each do |resto| %>
+  <li><%= link_to resto.name, restaurant_path(resto) %></li>
+<% end %>
+</ul>
+
+<%= link_to 'Create New Restaurant', new_restaurant_path %>
